@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background-image: url("Parallax1.png");
+    background-size: cover;
+  }
+  
+  .container {
+    width: 30%; /* reduced width */
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 5px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: transparent;
+    opacity: 80%;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+  }
+  .btn{
+    margin: 8px;
+    text-align: center;
+    float: right;
+    padding: 4px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: #f2f2f2;
+    cursor: grab;
+    font-weight: 700;
+  }
+  label{
+    color: #000000;
+  }
+  
+   input[type="radio"], input[type="checkbox"] {
+    margin-bottom: 10px;
+    color: #bebebe;
+    background-color: #373636;
+    margin: 5px;
+    padding: 10px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"],input[type="number"]{
+    color: #000000;
+    background-color: #ffffff;
+    width: 50%;
+    height: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #272727;
+    border-radius: 7px;
+  }
+  input[type="text"], input[type="email"], input[type="password"],input[type="number"]:hover{
+                  opacity: 100%;
+                  transition: 1s;
+
+  }
+  
+  input[type="button"] {
+    width: 100%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #14871a;
+    font-size: 1rem;
+  }
+  .Rem{
+    color: rgb(10, 128, 10);
+  }
