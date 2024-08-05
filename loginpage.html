@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="timer.js"></script>
+</head>
+<body>
+    <h1 style="color:white">Registration Form</h1>
+    <div class="container">
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="phone">Phone No:</label>
+        <input type="number" id="phone" name="phone" oninput="limitPhoneLength(this)"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" oninput="validateEmail(this)"><br>
+        <span id="email-error" style="color: red;"></span><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+        <label for="membership_type">Membership Type:</label>
+        <select id="membership_type" name="membership_type">
+            <option value="select">Select</option>
+            <option value="basic">Basic</option>
+            <option value="premium">Premium</option>
+            <option value="elite">Elite</option>
+        </select><br><br>
+        <label for="gym_location">Gym Location:</label>
+        <input type="checkbox" id="location1" name="gym_location" value="location1">
+        <label for="location1">Sarjapura</label>
+        <input type="checkbox" id="location2" name="gym_location" value="location2">
+        <label for="location2">Begur</label>
+        <input type="checkbox" id="location3" name="gym_location" value="location3">
+        <label for="location3">Koramangala</label><br><br>
+        <input type="checkbox" id="Rem" name="Rem" value="Rem">
+        <label for="Rem" class="Rem">Remember me</label><br><br>
+        <input type="button" value="submit" id="submit" onclick="homepage()">
+    </form>
+</div>
+
+</body>
+</html>
